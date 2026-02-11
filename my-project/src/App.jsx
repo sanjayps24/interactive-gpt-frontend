@@ -17,9 +17,19 @@ function App() {
               <Link to="/contact" className="text-white/80 hover:text-white transition drop-shadow-sm">Contact</Link>
             </div>
           </div>
-          <button className="px-5 py-2 bg-white/90 text-black rounded-full text-sm font-semibold hover:bg-white transition shadow-lg">
-            Sign In
-          </button>
+          <div className="flex items-center gap-4">
+            <button className="flex items-center gap-2 px-6 py-2.5 bg-white/10 backdrop-blur-xl border border-white/30 text-white rounded-2xl text-sm font-bold hover:bg-white/20 hover:border-indigo-400/50 hover:shadow-[0_0_20px_rgba(129,140,248,0.3)] transition-all shadow-2xl group relative overflow-hidden">
+              <span className="relative z-10 flex items-center gap-2">
+                Log In
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-4 h-4 group-hover:translate-x-1 transition-transform">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                </svg>
+              </span>
+            </button>
+            <button className="px-6 py-2.5 bg-gradient-to-br from-fuchsia-500 via-purple-600 to-indigo-700 text-white rounded-2xl text-sm font-black hover:scale-105 transition-all shadow-2xl border border-white/20 active:scale-95">
+              Sign Up
+            </button>
+          </div>
         </nav>
 
         <main className="flex-1 flex flex-col items-center justify-center">
